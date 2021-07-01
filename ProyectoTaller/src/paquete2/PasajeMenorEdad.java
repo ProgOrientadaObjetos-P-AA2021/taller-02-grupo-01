@@ -34,6 +34,7 @@ public class PasajeMenorEdad extends PasajeInterCantonal
     public void calcularValorPasaje(){
         valorPasaje = (numeroKmDistancia * 0.10) + (tarifaBase - (tarifaBase * 
                 (porcentajeDescuento / 100)));
+
     }
         
     public double getValorPasaje() {
@@ -42,7 +43,8 @@ public class PasajeMenorEdad extends PasajeInterCantonal
     
     @Override
     public String toString() {
-        return String.format("%s", super.toString());
+        return String.format("%sProcentaje de descuento: %.2f\nValor pasaje: %.2f\n"
+                , super.toString(), porcentajeDescuento, valorPasaje);
     }
     
 }

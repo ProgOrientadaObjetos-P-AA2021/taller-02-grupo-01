@@ -83,9 +83,9 @@ public abstract class PasajeInterCantonal implements Serializable {
 
     @Override
     public String toString() {
-        return String.format("Pasaje.\nNombre: %s\nCedula: %d\nOrigen: %s\n"
+        return String.format("\nNombre: %s\nCedula: %d\nOrigen: %s\n"
                 + "Destino: %s\nNumero de distancia: %.2f Km\nTarifa Base: %.2f\n"
-                + "Valor del pasaje: %.2f\n", nombre, cedula, origen, destino,
+                , nombre, cedula, origen, destino,
                 numeroKmDistancia, tarifaBase, valorPasaje);
     }
 

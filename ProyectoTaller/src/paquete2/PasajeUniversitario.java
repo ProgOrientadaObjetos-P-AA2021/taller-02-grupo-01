@@ -41,6 +41,7 @@ public class PasajeUniversitario extends PasajeInterCantonal {
 
     @Override
     public String toString() {
-        return String.format("%s", super.toString());
+       return String.format("\nUniversidad: %s%sValor Pasaje: %.2f\n",
+                nombreUniversidad, super.toString(), valorPasaje);
     }
 }

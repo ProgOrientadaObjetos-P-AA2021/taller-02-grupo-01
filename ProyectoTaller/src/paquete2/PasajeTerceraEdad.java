@@ -32,6 +32,7 @@ public class PasajeTerceraEdad extends PasajeInterCantonal {
 
     @Override
     public String toString() {
-        return String.format("%s", super.toString());
+        return String.format("%sValor Pasaje: %.2f\n",
+                super.toString(), valorPasaje);
     }
 }
