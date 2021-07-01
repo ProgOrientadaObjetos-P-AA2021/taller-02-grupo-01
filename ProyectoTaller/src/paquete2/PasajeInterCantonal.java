@@ -78,12 +78,15 @@ public abstract class PasajeInterCantonal implements Serializable {
     public void setTarifaBase(double tB) {
         tarifaBase = tB;
     }
-    
+
     public abstract void calcularValorPasaje();
 
     @Override
     public String toString() {
-        return String.format("Pasaje.");
+        return String.format("Pasaje.\nNombre: %s\nCedula: %d\nOrigen: %s\n"
+                + "Destino: %s\nNumero de distancia: %.2f Km\nTarifa Base: %.2f\n"
+                + "Valor del pasaje: %.2f\n", nombre, cedula, origen, destino,
+                numeroKmDistancia, tarifaBase, valorPasaje);
     }
 
 }

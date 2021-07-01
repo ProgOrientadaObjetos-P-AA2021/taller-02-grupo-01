@@ -12,6 +12,26 @@ import java.io.Serializable;
  * @author reroes
  */
 public class PasajeTerceraEdad extends PasajeInterCantonal {
-    
-    
+
+    private double valorPasaje;
+
+    public PasajeTerceraEdad(String n, int c, String o, String d, double nKD,
+            double tB) {
+        super(n, c, o, d, nKD, tB);
+
+    }
+
+    public double getValorPasaje() {
+        return valorPasaje;
+    }
+
+    @Override
+    public void calcularValorPasaje() {
+        valorPasaje = (numeroKmDistancia * 0.5) + (tarifaBase / 2);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s", super.toString());
+    }
 }
